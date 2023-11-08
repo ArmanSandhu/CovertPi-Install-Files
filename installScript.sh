@@ -17,7 +17,7 @@ echo "Repository Downloaded!"
 
 # Build the server
 cd "$DESKTOP_PATH/Covert-Pi-Server"
-go build -o covert-pi-server
+go build -o covert-pi-server ./cmd/covertpi
 
 echo "CovertPi Server has been built! Please use the openssl utility to generate the required server and client keys (It is recommended to place these files within the CovertPiServerDetails directory!)"
 
